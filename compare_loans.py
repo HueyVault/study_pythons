@@ -43,6 +43,19 @@ def calc_final_interest_rate(loan_products_list) :
     additional_interest = [x['additional_rate'] for x in loan_products_list]
     return [x+y-z for x,y,z in zip(base_interest,additional_interest,preferred_interest)]
 
+'''
+결과 출력 
+KB 스타 아파트 담보대출 혼합금리(주택자금), 1,041,562원
+일반신용대출, 1,044,271원
+신한은행 쏠편한 직장인대출S I, 1,049,688원
+우리 WON 갈아타기 직장인대출, 1,053,854원
+신한 MY CAR 신차 대출, 1,056,354원
+BNK모바일주택담보대출, 1,068,021원
+신한주택대출(아파트), 1,070,938원
+제일유리한 상품 :  (1041562.5, 'KB 스타 아파트 담보대출 혼합금리(주 
+택자금)')
+제일유리한 상품 :KB 스타 아파트 담보대출 혼합금리(주택자금), 1,041,562원
+'''
 
 repayment_period = 24
 principal_amount = 1000000
