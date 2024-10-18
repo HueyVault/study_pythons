@@ -1,4 +1,5 @@
 
+-- 특정 세대의 대장균 찾기
 SELECT 
 	C.ID
 FROM  ECOLI_DATA AS C  
